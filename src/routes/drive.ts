@@ -18,7 +18,8 @@ try {
          res.send('No files found.').status(404)
     }
 }catch (e) {
-      res.status(500).send('e')
+    console.log(e)
+     return res.status(500).send(e)
 }
 })
 
